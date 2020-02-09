@@ -1,0 +1,70 @@
+parameter description:
+
+    --n_clusters
+        type=int default = 5
+        only use in real data
+        set the number of clusters (default: 5)
+
+    --n_trial
+        type=int, default=100000
+        set number of trials(default: 10000)
+
+    --recording_time'
+        type=int, default=100
+        record the reward every recording_time times
+
+    --runtimes
+        type=int, default=300
+        set number of runtimes(default: 10)
+
+    --n_Arms
+        type=int, default=100
+        set number of arms (default: 100)
+
+    --n_protect_dim
+        type=int, default=3
+        set number of runtimes(default: 10)
+
+    --n_unprotect_dim
+        type=int, default=3
+        set number of arms (default: 100)
+
+    --alpha_pro
+        type=float, default=0.1
+        set parameter alpha
+
+    --alpha_unprotect
+        type=float, default=0.1
+        set parameter alpha
+
+    --alpha_full
+        type=float, default=0.1
+        set parameter alpha
+
+    --lambda_pro
+        type=float, default=0.1
+        set parameter alpha
+
+    --sigma_noise
+        type=float, default=0.1
+        set noise variance
+
+    --decrease_fun
+        type=str, default='f'
+        set decreasing function
+
+    --run_unprotect
+        action='store_true', default=False,
+        if specify, we will run unprotected version in the simulation
+
+    --infinite
+        action='store_true', default=False,
+        if specify, we will generate new arms every time
+
+    --plot
+        action='store_true', default=False,
+        if specify, we will plot
+
+    --rand_pro
+        action='store_true', default=False,
+        if specify, we will generate random projection operator
